@@ -6,6 +6,7 @@ import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/UserSlice';
+import { Photo_Link } from '../utils/constants';
 
 const Login = () => {
 
@@ -33,13 +34,13 @@ const Login = () => {
           // Signed up 
           const user = userCredential.user;
           updateProfile(user, {
-            displayName: name.current.value, photoURL: "https://cdn-icons-png.flaticon.com/512/149/149071.png"
+            displayName: name.current.value, photoURL: Photo_Link
           }).then(() => {
               const {uid, email, displayName, photoURL} = auth.currentUser
                           
               dispatch(addUser({uid:uid, email:email, displayName:displayName, photoURL:photoURL}))
 
-            navigate("/browse")
+            
           }).catch((error) => {
             seterrorMsg(error.message)
           });

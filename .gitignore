@@ -3,6 +3,8 @@
 # dependencies
 /node_modules
 /.pnp
+/src/utils/firebase.js
+/src/utils/constants.js
 .pnp.js
 
 # testing

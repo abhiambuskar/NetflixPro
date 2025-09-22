@@ -14,3 +14,16 @@
 - Create Redux store with Userslice
 - Implment Signout
 - Update user profile
+- Bugfix : Show the user icon only after the login
+- Bugfix : only able to access the /browse after login and not able to go to login after Sign In
+- Unsubscribing the component
+- Add hardcoded values in constants.js
+- Get data from TMDB
+- Custom hooks for Now playing movies
+- Create movieSlice
+- Update store with movie data
+- Planning for maincontainer and secondary container
+- Fetch data for trailer video
+- Update store with the trailer data
+- Embed youtube video and make it autoplay and mute
+- Tailwind classes to make maincontainer look good
