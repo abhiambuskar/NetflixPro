@@ -27,3 +27,9 @@
 - Update store with the trailer data
 - Embed youtube video and make it autoplay and mute
 - Tailwind classes to make maincontainer look good
+- Build Secondary Component
+- Build MovieList
+- Built MovieCard
+- Found Image_CDN for Netflix
+- Make browse page look good
+- usePopularMovies, useTopRated, useUpcoming make custom hooks
