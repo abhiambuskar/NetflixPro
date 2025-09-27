@@ -6,7 +6,7 @@ import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/UserSlice';
-import { Photo_Link } from '../utils/constants';
+import { BG_URL, Photo_Link } from '../utils/constants';
 
 const Login = () => {
 
@@ -45,7 +45,7 @@ const Login = () => {
             seterrorMsg(error.message)
           });
 
-          console.log(user)
+          // console.log(user)
           
         })
         .catch((error) => {
@@ -58,7 +58,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in 
           const user = userCredential.user;
-          console.log(user)
+          // console.log(user)
           navigate("/browse")
         })
         .catch((error) => {
@@ -75,7 +75,7 @@ const Login = () => {
     <div>
             <Header/>
             <div className='absolute'>
-                <img src='https://assets.nflxext.com/ffe/siteui/vlv3/3e4bd046-85a3-40e1-842d-fa11cec84349/web/IN-en-20250818-TRIFECTA-perspective_4bd1b66d-bbb6-4bc6-ba8f-ecbba53a1278_small.jpg' alt='background_img' className=''/>
+                <img src={BG_URL} className=''/>
             </div>
             <form onSubmit={(e) => e.preventDefault()} className='bg-black p-12 w-3/12 absolute mx-auto right-0 left-0 mt-24 text-white rounded-lg opacity-90'>
 
