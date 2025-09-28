@@ -33,3 +33,15 @@
 - Found Image_CDN for Netflix
 - Make browse page look good
 - usePopularMovies, useTopRated, useUpcoming make custom hooks
+- GeminiSearch Page 
+- GeminiSearch Bar
+-(BONUS) (Multi-language Feature in our App)
+- Get Open AI Api Key
+- Gemini Search API Call
+- fetched GeminiMoviesSuggestions from TMDB
+- created GeminiSlice added data
+- Resused Movie List component to make movie suggestion container
+- Memoization
+- Added .env file
+- Adding .env file to gitignore
+- Made our Site Responsive

@@ -29,8 +29,6 @@ const movieSlice = createSlice({
             state.TopRatedMovies = action.payload
         },
 
-    
-
         addTrailerVideo(state, action){
             state.trailerVideo = action.payload
         }

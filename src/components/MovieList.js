@@ -5,7 +5,7 @@ const MovieList = ({title, movies}) => {
     // console.log(movies)
   return (
     <div className=''>
-      <h4 className='font-bold text-xl text-white'>{title}</h4>
+      <h4 className='font-bold text-lg md:text-xl text-white'>{title}</h4>
         <div className='flex overflow-x-scroll no-scrollbar'>
             
             <div className='flex '>
