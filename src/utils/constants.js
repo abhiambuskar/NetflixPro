@@ -20,6 +20,6 @@ export const SUPPORTED_LANGUAGES = [
   {identifier:"spanish", name:"Spanish"}
 ]
 
-export const OPENAI_API_KEY= process.env.REACT_APP_GEMINI_API_KEY
+export const OPENAI_API_KEY= process.env.REACT_APP_OPENAI_API_KEY
 
-export const Google_API_KEY = process.env.REACT_APP_OPENAI_API_KEY
+export const Google_API_KEY = process.env.REACT_APP_GEMINI_API_KEY

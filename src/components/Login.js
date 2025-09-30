@@ -72,13 +72,15 @@ const Login = () => {
 
   return (
 
-    <div>
+    <div className=''>
             <Header/>
             <div className='absolute '>
                 <img src={BG_URL} className=''/>
             </div>
-            <form onSubmit={(e) => e.preventDefault()} className='bg-black p-12 w-full md:w-3/12 absolute mx-auto right-0 left-0 mt-24 text-white rounded-lg opacity-90'>
 
+            <form onSubmit={(e) => e.preventDefault()} className='bg-black p-12 w-full md:w-3/12 absolute mx-auto right-0 left-0 mt-24 text-white rounded-lg opacity-90'>
+                <h4>Demo User: test3@gmail.com</h4>
+                <h4>Demo Pass: Test@#123</h4>
                 <h1 className='text-2xl font-bold'>{signup? "Sign Up":"Sign In"}</h1>
                 {signup &&<input  ref={name} className='rounded-lg bg-gray-900 mt-5 p-2 m-2 w-full' type='text' placeholder='Name'/>}
 

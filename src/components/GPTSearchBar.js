@@ -26,7 +26,8 @@ const GPTSearchBar = () => {
 
 
   const handleGPTSearchClick = async () =>{
-    console.log(searchText.current.value)
+      console.log(searchText.current.value)
+      console.log(Google_API_KEY)
       // const completion = await openai.chat.completions.create({
       //   model: 'gpt-4o',
       //   messages: [
@@ -59,7 +60,7 @@ const GPTSearchBar = () => {
         console.log(gptMovies)
 
         const promiseArray = gptMovies.map((movie)=>searchMovieTMDB(movie));
-        // the result will be array of promise [promise1, promise2, promise3 ] promise will take some time to return
+        //the result will be array of promise [promise1, promise2, promise3 ] promise will take some time to return
         const tmdbSearchedResults = await Promise.all(promiseArray);
         console.log('tmdb Searched Results:', tmdbSearchedResults);
         dispatch(addGPTMovieResults({movieNames: gptMovies , movieResults : tmdbSearchedResults}))
