@@ -3,6 +3,9 @@ import MovieCard from './MovieCard'
 
 const MovieList = ({title, movies}) => {
     // console.log(movies)
+    if(movies === null){
+      return null
+    }
   return (
     <div className=''>
       <h4 className='font-bold text-lg md:text-xl text-white'>{title}</h4>

@@ -48,6 +48,7 @@ const Header = () => {
     const GPTSearch = useSelector(store =>store.gpt.showGPTSearch)
   return (
     <div className='absolute px-12 py-2 h-36 w-full font-bold bg-gradient-to-b from-black z-10 flex justify-between flex-col md:flex-row' >
+      
       <div>
         <img className='w-44 mx-auto md:mx-0 ' src={NETFLIX_LOGO} alt='login'/>
       </div>

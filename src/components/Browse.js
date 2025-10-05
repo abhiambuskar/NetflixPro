@@ -26,8 +26,12 @@ const Browse = () => {
         <Header/>
         {
           showGPTSearchView ?
-          <GPTSearch/>:
           <>
+            <Header/>
+            <GPTSearch/>
+          </>:
+          <>
+            
             <MainContainer/>
             <SecondaryContainer/>
             <Footer/>
